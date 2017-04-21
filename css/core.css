@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "reset.css";
+
+body {
+	background-color: #666;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #F7F7F7;
+/* Center Body */
+	margin: 50px 0 0 0;	/*box ends on window border - navbar appears when content div lower end dissappears */
+	padding: 0s;
+	text-align: center; /* IE5 fix */
+}
+
+#content {					/* Centered Content container */
+	width: 360px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 15px;
+}
+
+#css2Border {					/* additional CSS2 styles */
+	text-align: left;
+	margin: 15px;
+	padding: 15px;
+	border: 1px dashed #F7F7F7;
+	background-color: #666;	
+}
+
+#css3Border {					/* corner and shadow CSS3 styles */
+	text-align: left;
+	margin: 15px;
+	padding: 15px;
+	background-color: #666;
+/* rounded borders */
+	border: 2px solid #333;
+	border-radius: 25px;
+/* drop shadow*/
+	box-shadow: 0 0 10px #999;
+}
+
+#css3GradientL {					/* background linear gradient CSS3 styles */
+	text-align: left;
+	margin: 15px;
+	padding: 15px;
+	background-color: #666;
+/* rounded borders */
+	border: 2px solid #333;
+	border-radius: 25px;
+/* drop shadow*/
+	box-shadow: 0 0 10px #999;
+/* background linear gradient
+Syntax
+background: linear-gradient(direction, color-stop1, color-stop2, ...);
+*/
+	background: -webkit-linear-gradient(#333, #999);/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#333, #999);		/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#333, #999);	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#333, #999);			/* Standard syntax */	
+}
+
+#css3GradientR {					/* background linear gradient CSS3 styles */
+	text-align: left;
+	margin: 15px;
+	padding: 15px;
+	background-color: #666;
+/* rounded borders */
+	border: 2px solid #333;
+	border-radius: 25px;
+/* drop shadow*/
+	box-shadow: 0 0 10px #999;
+/* background radial gradient
+Syntax
+background: radial-gradient(shape size at position[x% y%], start-color, ..., last-color);
+*/
+	background: -webkit-radial-gradient(50% 90%, farthest-corner, #999, #333);	/* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(50% 90%, farthest-corner, #999, #333);		/* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(50% 90%, farthest-corner, #999, #333); 	/* For Firefox 3.6 to 15 */
+	background: radial-gradient(farthest-corner at 50% 90%, #999, #333);			/* Standard syntax */
+}
+
+#css3GradientT {					/* background linear gradient CSS3 styles */
+	text-align: left;
+	margin: 15px;
+	padding: 15px;
+	background-color: #666;
+/* rounded borders */
+	border: 2px solid #333;
+	border-radius: 25px;
+/* drop shadow*/
+	box-shadow: 0 0 10px #999;
+/* background linear gradient with transparency
+Syntax
+To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency);
+*/
+	background: -webkit-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+	background: -o-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1)); 		/*Opera 11.1-12*/
+	background: -moz-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,1)); 	/*Fx 3.6-15*/
+	background: linear-gradient(to top, rgba(255,0,0,0), rgba(255,0,0,1)); 	/*Standard*/
+}
